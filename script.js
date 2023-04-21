@@ -9,6 +9,10 @@ function volume_sphere() {
 		const result = eval(radius.value * radius.value * 3.14)
 		volume.value = result
 	})
+
+	function cal (e){
+		e.preventDefault()
+	}
 } 
 
 window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
